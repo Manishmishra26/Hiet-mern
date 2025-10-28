@@ -30,3 +30,5 @@ app.get('/',(req , res)=>{
     res.get('Hospital')
 })
 
+app.use('/', require('./doctors'))
+app.use('/patients', require('./patients'))
