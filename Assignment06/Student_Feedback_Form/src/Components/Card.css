@@ -1,0 +1,25 @@
+.card{
+    height: 100px;
+    width: 300px;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    animation-name: myanimation;
+    animation-duration: 4s; 
+}
+@keyframes myanimation {
+    0%{
+        transform: translateY(0);
+    }
+    50% {
+    transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+
+}
+p{
+    padding-bottom: 5px;
+}

@@ -1,9 +1,10 @@
 const express = require("express");
+const mongoose=require("mongoose")
 const app = express();
 const cors = require("cors");
 
 app.use(express.json());
-
+mongoose.connect("mongodb+srv://mishramanishgkp007_db_user:MVSA1vlmwMMzVZpp@cluster0.kiarkru.mongodb.net/bolgs")
 let blogs = [];
 let nextId = 1;
 
@@ -51,3 +52,7 @@ const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server listening at http://localhost:${PORT}/blogs`);
 });
+//MVSA1vlmwMMzVZpp
+//mishramanishgkp007_db_user
+//mongodb+srv://mishramanishgkp007_db_user:MVSA1vlmwMMzVZpp@cluster0.kiarkru.mongodb.net/
+//mongodb+srv://mishramanishgkp007_db_user:<db_password>@cluster0.kiarkru.mongodb.net/?appName=Cluster0
